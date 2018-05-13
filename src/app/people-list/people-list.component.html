@@ -1,0 +1,15 @@
+
+<div>
+  <table border=1>
+    <thead><td>ID</td><td>First Name</td><td>Last Name</td><td>Age</td><td>Weight</td></thead>
+    <tbody>
+      <tr *ngFor="let p of people" (click)="selectPerson(p)">
+        <td>{{ p.id }}</td>
+        <td>{{ p.firstName }}</td>
+        <td>{{ p.lastName }}</td>
+        <td>{{ p.age }}</td>
+        <td>{{ p.weight }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

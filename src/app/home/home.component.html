@@ -1,0 +1,4 @@
+<app-people-list [people]="people" (selectedPerson)="selectPerson($event)"></app-people-list>
+<p *ngIf="person">
+  Selected person: {{ person | json }}
+</p>
